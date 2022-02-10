@@ -98,6 +98,8 @@ elif [ "$2" = "groth16" ]; then
 
         snarkjs zkey export verificationkey dist/circuit_final.zkey dist/verification_key.json
 
+        snarkjs r1cs info dist/circuit.r1cs
+
     elif [ "$1" = "prove" ]; then 
         
         cd dist/circuit_js 
